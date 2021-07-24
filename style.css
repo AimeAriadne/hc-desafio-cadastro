@@ -13,12 +13,13 @@ body {
   width: 6.5rem;
   position: absolute;
   top: 4rem;
-  right: 1rem;
+  right: -5rem;
   clip-path: circle();
 }
 .container {
   width: 60rem;
   margin: 0 auto;
+  position: relative;
 }
 
 #headerbox {
