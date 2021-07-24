@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Vende Tudo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="headerbox">
+      <div id="titlebox">
+        <img id="logo" src="assets/img/logo_size.jpg" alt="Logo Vende Tudo" />
+        <h1>Sistema de Cadastro <span>Produtos e Clientes</span></h1>
+      </div>
+    </header>
+    <div class="container">
+      <div class="registration">
+        <section id="customer-registration">
+          <p>Cliente</p>
+          <button
+            id="add-customer"
+            type="button"
+            onClick="openModal('modal-customer')"
+          >
+            Cadastrar
+          </button>
+        </section>
+        <section id="product-registration">
+          <p>Produto</p>
+          <button
+            id="add-product"
+            type="button"
+            onClick="openModal('modal-product')"
+          >
+            Cadastrar
+          </button>
+        </section>
+      </div>
+    </div>
+    <div id="modal-customer" class="modal hide">
+      <div class="modal-container">
+        <button class="close-modal" onClick="closeModal('modal-customer')">
+          X
+        </button>
+
+        <form id="customer-form">
+          <h2 id="customer">Cadatre o Cliente</h2>
+
+          <input required id="name" type="text" placeholder="Nome do cliente" />
+          <input
+            required
+            id="email"
+            type="email"
+            placeholder="E-mail do cliente"
+          />
+          <input
+            required
+            id="tel"
+            type="tel"
+            placeholder="Telefone do cliente"
+          />
+          <input
+            required
+            id="address"
+            type="text"
+            placeholder="Endereço do cliente"
+          />
+          <input required id="cpf" type="text" placeholder="CPF do cliente" />
+          <button id="send-customer" type="button" onClick="saveCustomer()">
+            Cadastrar
+          </button>
+        </form>
+      </div>
+    </div>
+    <div id="modal-product" class="modal hide">
+      <div class="modal-container">
+        <button class="close-modal" onClick="closeModal('modal-product')">
+          X
+        </button>
+
+        <form id="product-form">
+          <h2 id="product">Cadatre o produto</h2>
+
+          <input required id="id" type="text" placeholder="Id do produto" />
+          <input
+            required
+            id="product-name"
+            type="name"
+            placeholder="Nome do produto"
+          />
+          <input required id="tag" type="text" placeholder="Tipo do produto" />
+          <input
+            required
+            id="amount"
+            type="number"
+            placeholder="Quantidade do produto"
+          />
+          <button id="send-product" type="button" onClick="saveProduct()">
+            Cadastrar
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>©2021 Vende Tudo.</p>
+      <p>Desenvolvido por Aimê Ramalho</p>
+    </footer>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
