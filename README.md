@@ -5,18 +5,18 @@ Criação de um sistema e-commerce para inventário de produtos e dados de clien
 # Funcionalidades
 
 - Adição de clientes e produtos no localstorage com os seguintes campos:
-  Cliente:
-  -- Nome
-  -- E-mail
-  -- Telefone
-  -- Endereço
-  -- CPF
+  - Cliente:
+     - Nome
+    - E-mail
+     - Telefone
+     - Endereço
+     - CPF
 
-  Produto:
-  -- ID
-  -- Nome
-  -- Tipo
-  -- Quantidade
+  - Produto:
+    - ID
+    - Nome
+    - Tipo
+     - Quantidade
 
 - Alerta de criação de clientes e produtos;
 - Alerta para preenchimento dos campos vazios dos formulários;
